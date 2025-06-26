@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Portfolio" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cara Toney Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="gradientMap">
+        <div class="absolute inset-0 justify-center">
+            <div class="bgShape1 opacity-50 bgBlur"></div>
+            <div class="bgShape2 opacity-50 bgBlur"></div>
+            <div class="bgShape3 opacity-50 bgBlur"></div>
+            <div class="bgShape4 opacity-50 bgBlur"></div>
+        </div>
+    </div>
+    <header id="header" role="banner">
+        <nav role="navigation" aria-label="Main Navigation">
+            <ul id="navBar">
+            <li><a class="navItem" href="#about">ABOUT ME</a></li>
+            <li><a class="navItem" href="#projects">PROJECTS</a></li>
+            <li><a class="navItem" href="#skills">SKILLS</a></li>
+            <li><a class="navItem" href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+        <section id="hero">
+            <div id="heroBox">
+                <h1>CARA TONEY</h1>
+                <h3>
+                    Front-End Web Developer & UI/UX Designer
+                </h3>
+                <a class="button" href="#contact">GET STARTED</a>
+            </div>
+        </section>
+    </header>
+    <main>
+    <section id="about">
+        <div id="aboutImgBox">
+            <img id="aboutImg" src="IMG_1552 (1).jpg" alt="Cara Toney">
+        </div>
+        <div id="aboutMe">
+            <h2>ABOUT ME</h2>
+            <div id="aboutMeText">
+                <p>
+                    Hello! My name is Cara Toney. I am a driven student at the University of Southern Mississippi currently pursuing a Bachelor's degree in Computer Science with a minor in Graphic Design. 
+                    I am currently working to obtain my certificates in Front-End Development and UX Design.
+                    As I grow and develop my skills, I hope to create innovative and user-friendly web applications that enhance user experiences.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="projects" aria-labelledby="projects-heading">
+        <h2 id="projects-heading">EXPLORE MY PROJECTS</h2>
+        <div class="carouselContainer" role="region" aria-label="Project Carousel">
+            <div class="carouselTrack">
+                <div class="carouselSlide" role="group" aria-roledescription="slide" aria-label="1 of 2">
+                    <article class="carouselCaption">
+                        <h3>Student Grade Management System</h3>
+                        <p>Program which will allow the user to 
+                            add new students with names and IDs, assign grades for different subjects, 
+                            calculate the average grade for each student, display student records with their grades.
+                            This project is part of Microsoft's Front-End Development Certificate and is meant to
+                            showcase a comprehensive understanding of control structures and coding concepts.
+                        </p>
+                    </article>
+                    <a href="https://github.com/caratoney03/StudentGradeManagement.git">Check it out</a>
+                </div>
+                <div class="carouselSlide" role="group" aria-roledescription="slide" aria-label="2 of 2">
+                    <article class="carouselCaption">
+                        <h3>Library System</h3>
+                        <p>Program that creates a library system and allows users to enter and remove books from the library
+                            and use a borrowing system to check up to 3 books out at a time. This project is part of Microsoft's 
+                            Front-End Development Certificate and is meant to showcase an understanding of C#.
+                        </p>
+                    </article>
+                    <a href="https://github.com/caratoney03/LibrarySystem.git">Check it out</a>
+                </div>
+            </div>
+            <button class="carouselButton left" aria-label="Previous Project" tabindex="0" role="button">&#10094;</button>
+            <button class="carouselButton right" aria-label="Next Project" tabindex="0" role="button">&#10095;</button>
+        </div>
+    </section>
+    <section id="skills" aria-labelledby="skills-heading">
+        <div class="gradientMap2">
+            <div class="absolute inset-0 justify-center">
+                <div class="bgShape5 opacity-50 bgBlur"></div>
+                <div class="bgShape6 opacity-50 bgBlur"></div>
+                <div class="bgShape7 opacity-50 bgBlur"></div>
+                <div class="bgShape8 opacity-50 bgBlur"></div>
+            </div>
+        </div>
+        <div style="position: relative; z-index: 1;">
+            <h2 id="skills-heading">PERSONAL SKILLS</h2>
+            <div id="skillList">
+                <div class="skillBox">
+                <h3>Programming Languages</h3>
+                <p>
+                    Proficient in HTML, CSS, JavaScript, and experienced with frameworks like React and Node.js for building dynamic web applications.
+                </p>
+                </div>
+                <div class="skillBox">
+                <h3>UI/UX Design</h3>
+                <p>
+                    Skilled in designing intuitive and visually appealing interfaces, focusing on user experience and accessibility best practices.
+                </p>
+                </div>
+                <div class="skillBox">
+                <h3>Responsive Web Development</h3>
+                <p>
+                    Experienced in creating responsive layouts that adapt seamlessly to any device, ensuring optimal usability and performance.
+                </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+    <footer id="contact" role="contentinfo">
+        <article class="contactText">
+            <h2>CONTACT ME</h2>
+            <p>
+                Feel free to reach out for questions or just to say hi!
+            </p>
+        </article>
+        <form class="contactForm" action="https://formsubmit.co/caratoney03@gmail.com" method="POST" aria-label="Contact Form">
+            <input class="contactInfo" type="text" name="name" placeholder="Your Name" required aria-label="Your Name"><br>
+            <input class="contactInfo" type="email" name="email" placeholder="Your Email" required aria-label="Your Email"><br>
+            <textarea id="contactMessage" name="message" placeholder="Your Message" required aria-label="Your Message"></textarea><br>
+            <button type="submit" class="button" id="sendButton">SEND</button>
+        </form>
+    </footer>
+</body>
+</html>
